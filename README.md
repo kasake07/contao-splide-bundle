@@ -1,0 +1,1 @@
+# contao-splide-bundle
