@@ -1,0 +1,36 @@
+{
+	"name": "external-packages/contao-splide-bundle",
+	"type": "contao-bundle",
+	"description": "Contao 4 bundle for Splide Slider",
+	"homepage": "https://external.at",
+	"license": "LGPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Kaan Keskin",
+			"homepage": "https://external.at",
+			"email": "kaan.keskin@external.at",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.2 || ^8.0",
+		"contao/core-bundle": "^4.9",
+		"symfony/config": "^4.4 || ^5.1",
+		"symfony/dependency-injection": "^4.4 || ^5.1",
+		"symfony/http-kernel": "^4.4 || ^5.1"
+	},
+	"conflict": {
+		"contao/manager-plugin": "<2.0 || >=3.0"
+	},
+	"require-dev": {
+		"contao/manager-plugin": "^2.0"
+	},
+	"extra": {
+		"contao-manager-plugin": "External\\ContaoSplideBundle\\ContaoManager\\Plugin"
+	},
+	"autoload": {
+		"psr-4": {
+			"External\\ContaoSplideBundle\\": "src/"
+		}
+	}
+}
