@@ -49,6 +49,28 @@ class SplideRenderer {
         if($model->splide_items && is_numeric($model->splide_items)) {
             $params["perPage"] = (int) $model->splide_items;
         }
+
+        //splide_autoplay
+        $params["autoplay"] = $model->splide_autoplay ? true : false;
+
+        //splide_arrows
+        $params["arrows"] = $model->splide_arrows ? true : false;
+
+        //splide_pagination
+        $params["pagination"] = $model->splide_pagination ? true : false;
+
+        //splide_drag
+        $params["drag"] = $model->splide_drag ? true : false;
+
+        //splide_keyboard
+        $params["keyboard"] = $model->splide_keyboard ? 'global' : false;
+
+        //splide_speed
+        $params["speed"] = $model->splide_speed ?: 400;
+
+        //splide_interval
+        $params["interval"] = $model->splide_interval ?: 5000;
+                
         
         $template->sliderId = $model->id;
         $template->params = $params;
