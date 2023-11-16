@@ -40,7 +40,6 @@ class SplideRenderer {
     }
 
     public function addTemplateParams(Template $template, Model $model, $params = []) {
-        error_log(date("[Y-m-d H:i:s]") . " [LOG] addTemplateParams()\n", 3, "../logs/debug" . date("Y-m-d") . ".log");
         
         //type
         $params["type"] = $model->splide_type;
@@ -75,7 +74,6 @@ class SplideRenderer {
         $template->sliderId = $model->id;
         $template->params = $params;
 
-        //error_log(date("[Y-m-d H:i:s]") . " [LOG] ".print_r($template, true)."\n", 3, "../logs/debug" . date("Y-m-d") . ".log");
     }
 
     public function addAssets() {

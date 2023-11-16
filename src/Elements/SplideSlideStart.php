@@ -37,7 +37,6 @@ class SplideSlideStart extends ContentElement {
      */
     public function generate()
     {
-        //error_log(date("[Y-m-d H:i:s]") . " [LOG] generate()\n", 3, "../logs/debug" . date("Y-m-d") . ".log");
         $request = System::getContainer()->get('request_stack')->getCurrentRequest();
         if ($request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request))
 		{
@@ -55,11 +54,6 @@ class SplideSlideStart extends ContentElement {
      */
     protected function compile()
     {   
-        //error_log(date("[Y-m-d H:i:s]") . " [LOG] compile()\n", 3, "../logs/debug" . date("Y-m-d") . ".log");
-
-		// Slider configuration
-		//$this->Template->config = $this->splide_type . ',' . $this->splide_items;
-
         //TODO: Add classes
 	}
 

@@ -8,11 +8,3 @@
         params: <?=json_encode($this->params)?>
     });
 </script>
-
-<?php
-    echo '<pre style="background: black;color:green;font-size: 0.8rem;">';
-    echo 'ID: ' . $this->sliderId . '<br>';
-    echo 'config: ';
-    print_r($this->params);
-    echo "</pre>";
-?>

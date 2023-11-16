@@ -57,8 +57,6 @@ class SplideSlideStop extends ContentElement {
     protected function compile()
     {
         // get start element to get config
-        //$objContent = ContentModel::findById($this->id);
-        error_log(date("[Y-m-d H:i:s]") . " [LOG] compile() ".$this->id."\n", 3, "../logs/debug" . date("Y-m-d") . ".log");
         $table = ContentModel::getTable();
 
         $objContent = ContentModel::findAll([
