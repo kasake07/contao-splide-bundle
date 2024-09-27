@@ -1,1 +1,4 @@
-# contao-splide-bundle
+# Contao Splide Slider
+
+https://splidejs.com/
+
